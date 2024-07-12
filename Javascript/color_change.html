@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        button {
+            margin-right: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <h2>Color Change</h2>
+        <button class="green" onclick="colorchange(this,'green')">GREEN</button>
+        <button class="red" onclick="colorchange(this,'red')">RED</button>
+        <button class="yellow" onclick="colorchange(this,'yellow')">YELLOW</button>
+        <h3 class="colorName"></h3>
+    </div>
+    <script>
+        function colorchange(element,color) {
+            element.style.backgroundColor = color;
+            document.getElementsByClassName('colorName')[0].innerHTML = color;
+
+        }
+    </script>
+</body>
+
+</html>

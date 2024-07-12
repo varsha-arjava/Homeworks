@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Comparison</title>
+</head>
+<body>
+    <h1>BMI Comparison</h1>
+    <div id="result"></div>
+
+    <script>
+        
+        let markMass1 = 78;
+        let markHeight1 = 1.69; 
+        let johnMass1 = 92;
+        let johnHeight1 = 1.95; 
+      
+        let markMass2 = 95; 
+        let markHeight2 = 1.88; 
+        let johnMass2 = 85; 
+        let johnHeight2 = 1.76; 
+
+        let resultDiv = document.getElementById('result');
+
+        let markBMI1 = calculateBMI(markMass1, markHeight1);
+        let johnBMI1 = calculateBMI(johnMass1, johnHeight1);
+
+        let markBMI2 = calculateBMI(markMass2, markHeight2);
+        let johnBMI2 = calculateBMI(johnMass2, johnHeight2);
+
+        function calculateBMI(mass, height) {
+            console.log(mass / (height * height));
+            return mass / (height * height);
+        }    
+       
+        if(markHigherBMI1 = markBMI1 > johnBMI1){
+            resultDiv.innerHTML += `
+            <p><b>Data 1:</b> Mark's BMI = ${markBMI1}, John's BMI = ${johnBMI1}</p>
+            <p>Mark has a higher BMI than John (Data 1): <b>${markHigherBMI1}</b></p>
+        `;
+        
+        } else {
+            resultDiv.innerHTML += `
+            <p><b>Data 1:</b> Mark's BMI = ${markBMI1}, John's BMI = ${johnBMI1}</p>
+            <p>Mark has a higher BMI than John (Data 1): <b>${markHigherBMI1}</b></p>
+        `; 
+        }
+
+      
+        if(markHigherBMI2 = markBMI2 > johnBMI2){
+            resultDiv.innerHTML += `
+            <p><b>Data 2:</b> Mark's BMI = ${markBMI2}, John's BMI = ${johnBMI2}</p>
+            <p>Mark has a higher BMI than John (Data 2): <b>${markHigherBMI2}</b></p>
+        `;
+        } else {
+            resultDiv.innerHTML += `
+            <p><b>Data 2:</b> Mark's BMI = ${markBMI2}, John's BMI = ${johnBMI2}</p>
+            <p>Mark has a higher BMI than John (Data 2): <b>${markHigherBMI2}</b></p>
+        `; 
+        }
+   
+    </script>
+</body>
+</html>
