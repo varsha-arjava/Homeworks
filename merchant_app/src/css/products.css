@@ -1,0 +1,74 @@
+/* products.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Custom AG Grid Styles */
+.ag-theme-quartz {
+    --ag-header-background-color: #fffff; 
+    --ag-header-foreground-color: #3498db;
+    --ag-row-hover-color: #f1f5f9; 
+    --ag-border-color: #d1d5db;
+    --ag-font-size: 14px;
+  }
+  
+  /* Custom Header Styling */
+  .ag-theme-quartz .ag-header-cell {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  /* Action Buttons */
+  .action-buttons img {
+    /* width: 24px;
+    height: 24px; */
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .action-buttons {
+   margin-top: 5%;
+  }
+  
+  .action-buttons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Center the action buttons */
+  .ag-theme-quartz .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* Optional: Fix Cell Padding */
+  .ag-theme-quartz .ag-cell {
+    /* padding: 7px 5px; */
+    text-align: left;
+  }
+
+  .flex {
+    display: flex;
+  }
+  .ag-theme-quartz .editable-cell {
+    /* background-color: #bcf0f7;  */
+    border: 1px solid #3498db; 
+  }
+  .ag-ltr .ag-cell-focus:not(.ag-cell-range-selected):focus-within{
+    border: none;
+  }
+ 
+  
+  

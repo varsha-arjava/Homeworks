@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.pro-group input, textarea, select {
+    width: 100%;
+    padding: 8px !important;
+    font-size: 14px !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+ 
+  .pro-group input:focus, textarea:focus, select:focus {
+    border-color: #3498db;
+  }
+
+  /* Floating Label */
+  .floating-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #888;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  input:focus ~ .floating-label,textarea:focus ~ .floating-label, select:focus ~ .floating-label  { 
+    color: #3498db;
+  }
+  /* Floating Behavior */
+ 
+  input ~ .floating-label, .upload-file {
+    top: -10px;
+    left: 12px;
+    font-size: 15px;
+    color: #000000;
+    opacity: 1;
+    background-color: white;
+  }
+  textarea ~ .floating-label {
+    top: -10px;
+    left: 12px;
+    font-size: 15px;
+    color: #000000;
+    opacity: 1;
+    background-color: white;
+  }
+
+  select ~ .floating-label {
+    top: -11px;
+    left: 12px;
+    font-size: 15px;
+    color: #000000;
+    opacity: 1;
+    background-color: white;
+  }
+ 
+  

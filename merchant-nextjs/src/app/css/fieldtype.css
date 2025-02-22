@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ /* Hide the default radio button */
+ .custom-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2a88c8;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  /* Add the custom checked styling */
+  .checked-default:checked {
+    background-color: #2a88c8;
+    border: none;
+  }
+  .checked-border {
+    border-color: #49454F;
+  }
+  .checked-default-disabled:checked {
+    background-color: #A9A8AA;
+    border: none;
+  }
+  .default-disabled {
+    border-color: #A9A8AA;
+  }
+
+  
+
+  /* Optional: Add a smaller circle to mimic the native radio button */
+  .custom-radio:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2a88c8;
+    border-radius: 4px; /* Optional: Make it rounded */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  /* Custom checked state */
+
+  .checkbox-default:checked {
+    background-color: #2a88c8;
+  }
+  .checkbox-border {
+    border-color: #49454F;
+  }
+  .checkbox-default-disabled:checked {
+    background-color: #A9A8AA;
+    border: none;
+  }
+  .default-disabled-checkbox {
+    border-color: #A9A8AA;
+  }
+  /* Add a checkmark for the checked state */
+  .custom-checkbox:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bg-gray-toggle {
+    background-color: #E3E3E4;
+  }
+  .border-gray-toggle {
+    border-color: #49454F;
+  }
+  .bg-gray-toggle-circle {
+    background-color: #49454F;
+  }
+  .border-lightgray-toggle {
+    border-color: #E3E3E4;
+  }
+  .border-lightgray-toggle-circle {
+    background-color: #A9A8AA;
+  } 

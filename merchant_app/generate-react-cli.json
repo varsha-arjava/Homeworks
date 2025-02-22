@@ -1,0 +1,30 @@
+{
+  "usesTypeScript": false,
+  "usesStyledComponents": true,
+  "testLibrary": "Testing Library",
+  "component": {
+    "default": {
+      "path": "src/components",
+      "withStyle": false,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
+    },
+    "page": {
+      "path": "src/pages",
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": false,
+      "withTest": true
+    },
+    "provider": {
+      "path": "src/contexts",
+      "withLazy": false,
+      "withStory": true,
+      "withStyle": false,
+      "withTest": true,
+      "withTypes": true,
+      "withContext": true
+    }
+  }
+}

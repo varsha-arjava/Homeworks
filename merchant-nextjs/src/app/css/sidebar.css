@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bar {
+  z-index: 99;
+}
+
+.img-w {
+  width: 10%;
+}
